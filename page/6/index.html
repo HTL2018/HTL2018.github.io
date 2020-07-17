@@ -155,6 +155,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-重载成员访问操作符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/08/%E9%87%8D%E8%BD%BD%E6%88%90%E5%91%98%E8%AE%BF%E9%97%AE%E6%93%8D%E4%BD%9C%E7%AC%A6/">重载成员访问操作符</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/03/08/%E9%87%8D%E8%BD%BD%E6%88%90%E5%91%98%E8%AE%BF%E9%97%AE%E6%93%8D%E4%BD%9C%E7%AC%A6/" class="archive-article-date">
+  	<time datetime="2020-03-08T08:17:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="相关知识："><a href="#相关知识：" class="headerlink" title="相关知识："></a>相关知识：</h3><ul>
+<li>箭头操作符 <code>-&gt;</code> (必须定义为类成员函数)和解引用操作符<code>*</code>(不要求定义为成员)常用在实现智能指针的类中。</li>
+<li>类成员访问运算符（ <code>-&gt;</code> ）可以被重载，但它较为麻烦。它被定义用于为一个类赋予”指针”行为。运算符 <code>-&gt;</code> 必须是一个成员函数。如果使用了 <code>-&gt;</code> 运算符，返回类型必须是指针或者是类的对象。</li>
+<li>运算符 <code>-&gt;</code> 通常与指针引用运算符 <code>*</code> 结合使用，用于实现”智能指针”的功能。这些指针是行为与正常指针相似的对象，唯一不同的是，当您通过指针访问对象时，它们会执行其他的任务。比如，当指针销毁时，或者当指针指向另一个对象时，会自动删除对象。
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/08/%E9%87%8D%E8%BD%BD%E6%88%90%E5%91%98%E8%AE%BF%E9%97%AE%E6%93%8D%E4%BD%9C%E7%AC%A6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-重载操作符的定义" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -731,90 +814,6 @@
 
 
   
-    <article id="post-复制构造函数和赋值操作符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/01/%E5%A4%8D%E5%88%B6%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C%E7%AC%A6/">复制构造函数和赋值操作符</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/01/%E5%A4%8D%E5%88%B6%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C%E7%AC%A6/" class="archive-article-date">
-  	<time datetime="2020-03-01T08:21:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="相关知识："><a href="#相关知识：" class="headerlink" title="相关知识："></a>相关知识：</h2><ul>
-<li>如果类的设计者不写复制构造函数，编译器就会自动生成复制构造函数。  </li>
-<li>大多数情况下，其作用是实现从源对象到目标对象逐个字节的复制，即使得目标对象的每个成员变量都变得和源对象相等。  </li>
-<li>编译器自动生成的复制构造函数称为“默认复制构造函数”。    </li>
-<li>注意，默认构造函数（即无参构造函数）不一定存在，但是复制构造函数总是会存在。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/01/%E5%A4%8D%E5%88%B6%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C%E7%AC%A6/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/5/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/7/">Next &amp;raquo;</a>
@@ -982,6 +981,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">MPC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ADP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">论文写作与投稿</a>
               </li>
             
             <div class="clearfix"></div>
