@@ -155,6 +155,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-bazel入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/05/bazel%E5%85%A5%E9%97%A8/">bazel入门</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/04/05/bazel%E5%85%A5%E9%97%A8/" class="archive-article-date">
+  	<time datetime="2020-04-05T15:08:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="建立工作区（workspace）"><a href="#建立工作区（workspace）" class="headerlink" title="建立工作区（workspace）"></a>建立工作区（<code>workspace</code>）</h3><p><code>Bazel</code>的编译是基于工作区（<code>workspace</code>）的概念。工作区是一个存放了所有源代码和<code>Bazel</code>编译输出文件的目录，也就是整个项目的根目录。同时它也包含一些<code>Bazel</code>认识的文件：</p>
+<ul>
+<li><code>WORKSPACE</code>文件，用于指定当前文件夹就是一个<code>Bazel</code>的工作区。所以<code>WORKSPACE</code>文件总是存在于项目的根目录下。</li>
+<li>一个或多个<code>BUILD</code>文件，用于告诉<code>Bazel</code>怎么构建项目的不同部分。（如果工作区中的一个目录包含<code>BUILD</code>文件，那么它就是一个<code>package</code>。）<br>那么要指定一个目录为<code>Bazel</code>的工作区，就只要在该目录下创建一个空的<code>WORKSPACE</code>文件即可。<br>当<code>Bazel</code>编译项目时，所有的输入和依赖项都必须在同一个工作区。属于不同工作区的文件，除非<code>linked</code>否则彼此独立。
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">bazel编译</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/05/bazel%E5%85%A5%E9%97%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-智能指针" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -727,90 +810,9 @@
 
 
   
-    <article id="post-链式队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/22/%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97/">链式队列</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/22/%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97/" class="archive-article-date">
-  	<time datetime="2020-03-22T03:55:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><h4 id="队列的概念"><a href="#队列的概念" class="headerlink" title="队列的概念"></a>队列的概念</h4><p>队列(queue)是另一种限定存取位置的线性表.它<strong>只允许在表的一端插入,在另一端删除</strong>.允许插入的一端叫做<strong>队尾(rear)</strong>,允许删除的一端叫做<strong>队头(front)</strong>.队列存取数据的特点是”<strong>先进先出</strong>“.</p>
-<h4 id="链式队列"><a href="#链式队列" class="headerlink" title="链式队列:"></a>链式队列:</h4><p>链式队列是队列基于单链表的一种存储表示.在单链表的每一个结点中有两个域:data存放队列元素的值,link域存放单链表下一个结点的地址.<strong>队列的队头指针指向单链表的第一个结点,队尾指针指向单链表的最后一个结点</strong><br>用单链表表示的链式队列特别适合于数据元素变动比较大的情形,而且不存在队列满而溢出的情况.
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/22/%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
     </nav>
   
 

@@ -155,6 +155,87 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-链式队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/22/%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97/">链式队列</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/03/22/%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97/" class="archive-article-date">
+  	<time datetime="2020-03-22T03:55:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><h4 id="队列的概念"><a href="#队列的概念" class="headerlink" title="队列的概念"></a>队列的概念</h4><p>队列(queue)是另一种限定存取位置的线性表.它<strong>只允许在表的一端插入,在另一端删除</strong>.允许插入的一端叫做<strong>队尾(rear)</strong>,允许删除的一端叫做<strong>队头(front)</strong>.队列存取数据的特点是”<strong>先进先出</strong>“.</p>
+<h4 id="链式队列"><a href="#链式队列" class="headerlink" title="链式队列:"></a>链式队列:</h4><p>链式队列是队列基于单链表的一种存储表示.在单链表的每一个结点中有两个域:data存放队列元素的值,link域存放单链表下一个结点的地址.<strong>队列的队头指针指向单链表的第一个结点,队尾指针指向单链表的最后一个结点</strong><br>用单链表表示的链式队列特别适合于数据元素变动比较大的情形,而且不存在队列满而溢出的情况.
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/22/%E9%93%BE%E5%BC%8F%E9%98%9F%E5%88%97/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-函数模板" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -730,92 +811,9 @@
 
 
   
-    <article id="post-派生类的构造函数和析构函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/15/%E6%B4%BE%E7%94%9F%E7%B1%BB%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/">派生类的构造函数和析构函数</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/15/%E6%B4%BE%E7%94%9F%E7%B1%BB%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/" class="archive-article-date">
-  	<time datetime="2020-03-15T08:33:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><ul>
-<li>基类的构造函数和析构函数不能被继承，基类成员的初始化只能在基类的构造函数中进行。</li>
-<li>派生类的数据成员包括基类的数据成员和派生类自身新增的数据成员。</li>
-<li>派生类对象生成时，会引发一系列构造函数调用，顺序是：先从上至下执行所有基类的构造函数，再按照成员对象的定义顺序执行各个成员对象的构造函数，最后执行自身的构造函数；而派生类对象消亡时，先执行自身的析构函数，然后按与构造的次序相反的顺序依次执行所有成员对象的析构函数，最后再从底向上依次执行各个基类的析构函数。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/15/%E6%B4%BE%E7%94%9F%E7%B1%BB%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
     </nav>
   
 

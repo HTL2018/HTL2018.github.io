@@ -155,6 +155,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-软件使用及车辆参数建模" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/31/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%BD%A6%E8%BE%86%E5%8F%82%E6%95%B0%E5%BB%BA%E6%A8%A1/">软件使用及车辆参数建模</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/05/31/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%BD%A6%E8%BE%86%E5%8F%82%E6%95%B0%E5%BB%BA%E6%A8%A1/" class="archive-article-date">
+  	<time datetime="2020-05-31T13:51:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="软件使用的基础知识"><a href="#软件使用的基础知识" class="headerlink" title="软件使用的基础知识"></a>软件使用的基础知识</h1><p>主要以<code>carsim2016</code>为例，也有<code>carsim8.02</code>，区别不大，道理相通。<br><img src="https://gitee.com/huangtenglong/BlogPictures/raw/master/image-20200528110958742.png" alt="image-20200528110958742">
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Carsim</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/31/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%BD%A6%E8%BE%86%E5%8F%82%E6%95%B0%E5%BB%BA%E6%A8%A1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-线性时变模型MPC跟踪直线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -721,92 +801,9 @@
 
 
   
-    <article id="post-bazel入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/05/bazel%E5%85%A5%E9%97%A8/">bazel入门</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/04/05/bazel%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-04-05T15:08:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="建立工作区（workspace）"><a href="#建立工作区（workspace）" class="headerlink" title="建立工作区（workspace）"></a>建立工作区（<code>workspace</code>）</h3><p><code>Bazel</code>的编译是基于工作区（<code>workspace</code>）的概念。工作区是一个存放了所有源代码和<code>Bazel</code>编译输出文件的目录，也就是整个项目的根目录。同时它也包含一些<code>Bazel</code>认识的文件：</p>
-<ul>
-<li><code>WORKSPACE</code>文件，用于指定当前文件夹就是一个<code>Bazel</code>的工作区。所以<code>WORKSPACE</code>文件总是存在于项目的根目录下。</li>
-<li>一个或多个<code>BUILD</code>文件，用于告诉<code>Bazel</code>怎么构建项目的不同部分。（如果工作区中的一个目录包含<code>BUILD</code>文件，那么它就是一个<code>package</code>。）<br>那么要指定一个目录为<code>Bazel</code>的工作区，就只要在该目录下创建一个空的<code>WORKSPACE</code>文件即可。<br>当<code>Bazel</code>编译项目时，所有的输入和依赖项都必须在同一个工作区。属于不同工作区的文件，除非<code>linked</code>否则彼此独立。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">bazel编译</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/05/bazel%E5%85%A5%E9%97%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
     </nav>
   
 
