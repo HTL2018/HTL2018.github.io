@@ -155,6 +155,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-深复制与浅复制" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/01/%E6%B7%B1%E5%A4%8D%E5%88%B6%E4%B8%8E%E6%B5%85%E5%A4%8D%E5%88%B6/">深复制与浅复制</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/03/01/%E6%B7%B1%E5%A4%8D%E5%88%B6%E4%B8%8E%E6%B5%85%E5%A4%8D%E5%88%B6/" class="archive-article-date">
+  	<time datetime="2020-03-01T08:22:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="相关知识："><a href="#相关知识：" class="headerlink" title="相关知识："></a>相关知识：</h2><ol>
+<li>类中如果不自己定义默认拷贝函数，即系统自动生成的默认拷贝函数实现的<strong>默认的拷贝行为是浅拷贝</strong>。   </li>
+<li>对于简单的类，默认的拷贝构造函数一般就够用了，我们也没有必要再显式地定义一个功能类似的拷贝构造函数。但是当类持有其它资源时，例如<strong>动态分配的内存、指向其他数据的指针</strong>等，默认的拷贝构造函数就不能拷贝这些资源了，我们必须显式地定义拷贝构造函数，以完整地拷贝对象的所有数据。   </li>
+<li>下面代码中我们显式地定义了拷贝构造函数，它除了会将原有对象的所有成员变量拷贝给新对象，还会为新对象再分配一块内存，并将原有对象所持有的内存也拷贝过来。这样做的结果是，原有对象和新对象所持有的动态内存是相互独立的，更改一个对象的数据不会影响另外一个对象。<strong>这种将对象所持有的其它资源一并拷贝的行为叫做深拷贝</strong>，我们必须显式地定义拷贝构造函数才能达到深拷贝的目的。
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/01/%E6%B7%B1%E5%A4%8D%E5%88%B6%E4%B8%8E%E6%B5%85%E5%A4%8D%E5%88%B6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-析构函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
