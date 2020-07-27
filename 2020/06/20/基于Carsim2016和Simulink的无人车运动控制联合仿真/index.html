@@ -358,24 +358,6 @@
 </aside>
 
 
-    <div id="toc-div" class="toc-article" >
-        <strong class="toc-title">Index</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#实现的功能："><span class="toc-number">1.</span> <span class="toc-text">实现的功能：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实现步骤："><span class="toc-number">2.</span> <span class="toc-text">实现步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#carsim-中搭建工况："><span class="toc-number">2.1.</span> <span class="toc-text">carsim 中搭建工况：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装OPTI非线性求解工具箱："><span class="toc-number">2.2.</span> <span class="toc-text">安装OPTI非线性求解工具箱：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#carsim和matlab联合仿真："><span class="toc-number">2.3.</span> <span class="toc-text">carsim和matlab联合仿真：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模型预测控制的原理说明："><span class="toc-number">2.4.</span> <span class="toc-text">模型预测控制的原理说明：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#此工作一些有待提升和优化的地方："><span class="toc-number">2.5.</span> <span class="toc-text">此工作一些有待提升和优化的地方：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#源码下载地址："><span class="toc-number">3.</span> <span class="toc-text">源码下载地址：</span></a></li></ol>
-        
-    </div>
-
-<h1 id="实现的功能："><a href="#实现的功能：" class="headerlink" title="实现的功能："></a>实现的功能：</h1><p>可以使用<code>carsim2016</code>和<code>matlab2019</code>进行联仿，实现跟踪直线<code>Y=2</code>和<code>Y=0.3 * Sin(0.1 * pi * x)</code>的效果。<a id="more"></a></p>
-<h1 id="实现步骤："><a href="#实现步骤：" class="headerlink" title="实现步骤："></a>实现步骤：</h1><h2 id="carsim-中搭建工况："><a href="#carsim-中搭建工况：" class="headerlink" title="carsim 中搭建工况："></a><code>carsim</code> 中搭建工况：</h2><p><a href="https://zhuanlan.zhihu.com/p/59414542" target="_blank" rel="noopener">基于 Carsim 2016 和 Simulink的无人车运动控制联合仿真（一）</a><br>搭建时注意：<code>Copy and Link Dataset</code>是基于以下进行的：<br><img src="https://gitee.com/huangtenglong/BlogImages/raw/master/20200620190656.png" alt="image-20200620091802519"></p>
-<h2 id="安装OPTI非线性求解工具箱："><a href="#安装OPTI非线性求解工具箱：" class="headerlink" title="安装OPTI非线性求解工具箱："></a>安装<code>OPTI</code>非线性求解工具箱：</h2><p><a href="https://zhuanlan.zhihu.com/p/61598508" target="_blank" rel="noopener">基于 Carsim 2016 和 Simulink的无人车运动控制联合仿真（二）</a><br>下载链接：<br><a href="https://github.com/HTL2018/OPTI" target="_blank" rel="noopener">OPTI源码</a></p>
-<h2 id="carsim和matlab联合仿真："><a href="#carsim和matlab联合仿真：" class="headerlink" title="carsim和matlab联合仿真："></a><code>carsim</code>和<code>matlab</code>联合仿真：</h2><p><a href="https://zhuanlan.zhihu.com/p/61652921" target="_blank" rel="noopener">基于 Carsim 2016 和 Simulink的无人车运动控制联合仿真（四）</a></p>
-<h2 id="模型预测控制的原理说明："><a href="#模型预测控制的原理说明：" class="headerlink" title="模型预测控制的原理说明："></a>模型预测控制的原理说明：</h2><p><a href="https://zhuanlan.zhihu.com/p/61598852" target="_blank" rel="noopener">基于 Carsim 2016 和 Simulink的无人车运动控制联合仿真（三）</a><br>其他的对原理说明的辅助资料：<br><a href="https://www.bilibili.com/video/av60708092/" target="_blank" rel="noopener">模型预测控制 MPC 08.04 总结 修正 代码解析 CarSim Simulink联合仿真</a></p>
-<h2 id="此工作一些有待提升和优化的地方："><a href="#此工作一些有待提升和优化的地方：" class="headerlink" title="此工作一些有待提升和优化的地方："></a>此工作一些有待提升和优化的地方：</h2><p>速度的约束不够，在实现之后可以发现如果初始速度比待跟踪速度大，速度的调节过程很慢，输出制动力矩<code>plot</code>,可以发现没有制动力矩；</p>
-<h1 id="源码下载地址："><a href="#源码下载地址：" class="headerlink" title="源码下载地址："></a>源码下载地址：</h1><p><a href="https://github.com/HTL2018/Simulation-platform/tree/master/MPC-Simulink-Carsim" target="_blank" rel="noopener">MPC-Simulink-Carsim</a></p>
-
-
-
-
   
   
   
