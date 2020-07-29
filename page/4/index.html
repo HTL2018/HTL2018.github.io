@@ -155,6 +155,244 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-多继承与虚基类" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/29/%E5%A4%9A%E7%BB%A7%E6%89%BF%E4%B8%8E%E8%99%9A%E5%9F%BA%E7%B1%BB/">多继承与虚基类</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/03/29/%E5%A4%9A%E7%BB%A7%E6%89%BF%E4%B8%8E%E8%99%9A%E5%9F%BA%E7%B1%BB/" class="archive-article-date">
+  	<time datetime="2020-03-29T03:35:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><p> <code>C++</code>允许一个派生类从多个基类继承，这种继承方式称为多重继承，当从多个基类继承时每个基类之间用逗号隔开，比如<code>class A:public B, public C{}</code>就表示派生类<code>A</code>从基类<code>B</code>和<code>C</code>继承而来。<br>多重继承的构造函数和析构函数：多重继承中初始化的次序是按继承的次序来调用构造函数的而不是按初始化列表的次序， 比如有<code>class A:public B, public C{}</code>那么在定义类<code>A</code>的对象<code>A m</code>时将首先由类<code>A</code>的构造函数调用类<code>B</code>的构造函数初始化<code>B</code>，然后调用类<code>C</code>的构造函数初始化<code>C</code>，最后再初始化对象<code>A</code>，这与在类<code>A</code>中的初始化列表次序无关。
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/29/%E5%A4%9A%E7%BB%A7%E6%89%BF%E4%B8%8E%E8%99%9A%E5%9F%BA%E7%B1%BB/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+  
+    <article id="post-标准异常" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/29/%E6%A0%87%E5%87%86%E5%BC%82%E5%B8%B8/">标准异常</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/03/29/%E6%A0%87%E5%87%86%E5%BC%82%E5%B8%B8/" class="archive-article-date">
+  	<time datetime="2020-03-29T03:35:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><p><code>C++</code> 提供了一系列标准的异常，定义在<code>&lt;exception&gt;</code>中，我们可以在程序中使用这些标准的异常。<code>C++</code>语言本身或者标准库抛出的异常都是 <code>exception</code> 的子类，称为标准异常（<code>Standard Exception</code>）。
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/29/%E6%A0%87%E5%87%86%E5%BC%82%E5%B8%B8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+  
+    <article id="post-Cpp异常" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/22/Cpp%E5%BC%82%E5%B8%B8/">Cpp异常</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/03/22/Cpp%E5%BC%82%E5%B8%B8/" class="archive-article-date">
+  	<time datetime="2020-03-22T03:58:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><p>异常提供了一种转移程序控制权的方式。<code>C++</code> 异常处理涉及到三个关键字：<code>try</code>、<code>catch</code>、<code>throw</code>。</p>
+<ul>
+<li><code>throw</code>: 当问题出现时，程序会抛出一个异常。这是通过使用 <code>throw</code> 关键字来完成的。</li>
+<li><code>catch</code>: 在您想要处理问题的地方，通过异常处理程序捕获异常。<code>catch</code> 关键字用于捕获异常。</li>
+<li><code>try</code>: <code>try</code>块中的代码标识将被激活的特定异常。它后面通常跟着一个或多个 <code>catch</code> 块。
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/22/Cpp%E5%BC%82%E5%B8%B8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+  
     <article id="post-链式队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -557,244 +795,6 @@
 
 
   
-    <article id="post-我的资源" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/15/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90/">我的资源</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/15/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90/" class="archive-article-date">
-  	<time datetime="2020-03-15T08:34:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="电影资源："><a href="#电影资源：" class="headerlink" title="电影资源："></a>电影资源：</h3><p><a href="http://video.tukergo.com" target="_blank" rel="noopener">途客</a><br>第一眼看网站的格局，是不是界面很清爽？但是它更加强大！要会员的电影，也是可以看的；支持全网搜索，电影、电视剧、综艺、动漫等一网打尽。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">资源</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/15/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-  
-    <article id="post-顺序队列" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/15/%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/">顺序队列</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/15/%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/" class="archive-article-date">
-  	<time datetime="2020-03-15T08:33:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><ul>
-<li>队列：<code>FIFO</code>(先进先出)</li>
-<li>特点：元素操作以<code>FIFO</code>方式操作</li>
-<li>例子：窗口打饭，银行排队</li>
-<li>队列两端：队尾：只能进队的一端； 队头：只能出队
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/15/%E9%A1%BA%E5%BA%8F%E9%98%9F%E5%88%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-  
-    <article id="post-三种继承" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/15/%E4%B8%89%E7%A7%8D%E7%BB%A7%E6%89%BF/">三种继承</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/15/%E4%B8%89%E7%A7%8D%E7%BB%A7%E6%89%BF/" class="archive-article-date">
-  	<time datetime="2020-03-15T08:33:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><p><strong>1.类的三种成员类型</strong><br><a href="https://imgchr.com/i/8PW9YV" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/10/8PW9YV.png" alt="8PW9YV.png"></a><br>如图所示： <code>public</code> ， <code>protected</code> ， <code>private</code> 三种成员类型，当没表明类型的时候，（<code>class</code>）默认是<code>private</code>的。<br>类外部的意思是：<code>main</code> 函数，或者定义全局变量的外部空间，或者其他类空间。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/15/%E4%B8%89%E7%A7%8D%E7%BB%A7%E6%89%BF/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
@@ -974,6 +974,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">强化学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">轨迹跟踪</a>
               </li>
             
             <div class="clearfix"></div>

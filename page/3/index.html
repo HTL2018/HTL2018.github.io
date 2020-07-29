@@ -155,6 +155,242 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-复杂度分析之空间复杂度" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/19/%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E4%B9%8B%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">复杂度分析之空间复杂度</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/04/19/%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E4%B9%8B%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="archive-article-date">
+  	<time datetime="2020-04-19T01:09:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="复杂度分析（上）：如何分析、统计算法的执行效率和资源消耗？"><a href="#复杂度分析（上）：如何分析、统计算法的执行效率和资源消耗？" class="headerlink" title="复杂度分析（上）：如何分析、统计算法的执行效率和资源消耗？"></a>复杂度分析（上）：如何分析、统计算法的执行效率和资源消耗？</h3><p><strong>复杂度分析是整个算法学习的精髓</strong>，只要掌握了它，数据结构和算法的内容基本上就掌握了一半。</p>
+<h3 id="1-为什么需要复杂度分析？"><a href="#1-为什么需要复杂度分析？" class="headerlink" title="1. 为什么需要复杂度分析？"></a>1. 为什么需要复杂度分析？</h3><p>你可能会有些疑惑，我把代码跑一遍，通过统计、监控，就能得到算法执行的时间和占用的内存大小。为什么还要做时间、空间复杂度分析呢？这种分析方法能比我实实在在跑一遍得到的数据更准确吗？<br>首先，可以肯定地说，你这种评估算法执行效率的方法是正确的。很多数据结构和算法书籍还给这种方法起了一个名字，叫<strong>事后统计法</strong>。但是，这种统计方法有非常大的局限性。<strong>事后统计法的局限性：</strong>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/19/%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E4%B9%8B%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+  
+    <article id="post-数据结构与算法高效学习方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">数据结构与算法高效学习方法</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/04/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2020-04-19T01:09:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="如何高效地学习数据结构与算法？"><a href="#如何高效地学习数据结构与算法？" class="headerlink" title="如何高效地学习数据结构与算法？"></a>如何高效地学习数据结构与算法？</h3><h4 id="1-什么是数据结构？什么是算法？"><a href="#1-什么是数据结构？什么是算法？" class="headerlink" title="1. 什么是数据结构？什么是算法？"></a>1. 什么是数据结构？什么是算法？</h4><p>从广义上讲，<strong>数据结构就是指一组数据的存储结构。算法就是操作数据的一组方法</strong>。<br>从狭义上讲，是指某些著名的数据结构和算法，比如队列、栈、堆、二分查找、动态规划等。这些都是前人智慧的结晶，我们可以直接拿来用。这些经典数据结构和算法，都是前人从很多实际操作场景中抽象出来的，经过非常多的求证和检验，可以高效地帮助我们解决很多实际的开发问题。<br><strong>数据结构和算法有什么关系呢？</strong>数据结构是为算法服务的，算法要作用在特定的数据结构之上。
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据结构与算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+  
+    <article id="post-数据可视化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/12/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">数据可视化</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/04/12/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" class="archive-article-date">
+  	<time datetime="2020-04-12T03:07:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-图形绘制："><a href="#1-图形绘制：" class="headerlink" title="1. 图形绘制："></a>1. 图形绘制：</h3><h4 id="1-1-离散数据及离散函数："><a href="#1-1-离散数据及离散函数：" class="headerlink" title="1.1 离散数据及离散函数："></a>1.1 离散数据及离散函数：</h4><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">X1 = [<span class="number">1</span> <span class="number">2</span> <span class="number">4</span> <span class="number">6</span> <span class="number">7</span> <span class="number">8</span> <span class="number">10</span> <span class="number">11</span> <span class="number">12</span> <span class="number">14</span> <span class="number">16</span> <span class="number">17</span> <span class="number">18</span> <span class="number">20</span>];</span><br><span class="line">Y1 = [<span class="number">1</span> <span class="number">2</span> <span class="number">4</span> <span class="number">6</span> <span class="number">7</span> <span class="number">8</span> <span class="number">10</span> <span class="number">10</span> <span class="number">8</span> <span class="number">7</span> <span class="number">6</span> <span class="number">4</span> <span class="number">2</span> <span class="number">1</span>]; %生成两个一维实数组</span><br><span class="line">figure(<span class="number">1</span>)</span><br><span class="line">plot(X1,Y1,<span class="string">'O'</span>,<span class="string">'MarkerSize'</span>, <span class="number">15</span>)</span><br><span class="line"></span><br><span class="line">X2 = <span class="number">1</span>:<span class="number">20</span>;</span><br><span class="line">Y2 = log(X2); %根据log函数生成两个一维实数数组</span><br><span class="line">figure(<span class="number">2</span>)</span><br><span class="line">plot(X2,Y2,<span class="string">'o'</span>,<span class="string">'MarkerSize'</span>, <span class="number">15</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>执行结果：</strong><br><a href="https://imgchr.com/i/G56Bxs" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/09/G56Bxs.md.png" alt="G56Bxs.md.png"></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Matlab</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/12/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+  
     <article id="post-bazel入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -556,244 +792,6 @@
 
 
   
-    <article id="post-多继承与虚基类" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/29/%E5%A4%9A%E7%BB%A7%E6%89%BF%E4%B8%8E%E8%99%9A%E5%9F%BA%E7%B1%BB/">多继承与虚基类</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/29/%E5%A4%9A%E7%BB%A7%E6%89%BF%E4%B8%8E%E8%99%9A%E5%9F%BA%E7%B1%BB/" class="archive-article-date">
-  	<time datetime="2020-03-29T03:35:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><p> <code>C++</code>允许一个派生类从多个基类继承，这种继承方式称为多重继承，当从多个基类继承时每个基类之间用逗号隔开，比如<code>class A:public B, public C{}</code>就表示派生类<code>A</code>从基类<code>B</code>和<code>C</code>继承而来。<br>多重继承的构造函数和析构函数：多重继承中初始化的次序是按继承的次序来调用构造函数的而不是按初始化列表的次序， 比如有<code>class A:public B, public C{}</code>那么在定义类<code>A</code>的对象<code>A m</code>时将首先由类<code>A</code>的构造函数调用类<code>B</code>的构造函数初始化<code>B</code>，然后调用类<code>C</code>的构造函数初始化<code>C</code>，最后再初始化对象<code>A</code>，这与在类<code>A</code>中的初始化列表次序无关。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/29/%E5%A4%9A%E7%BB%A7%E6%89%BF%E4%B8%8E%E8%99%9A%E5%9F%BA%E7%B1%BB/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-  
-    <article id="post-标准异常" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/29/%E6%A0%87%E5%87%86%E5%BC%82%E5%B8%B8/">标准异常</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/29/%E6%A0%87%E5%87%86%E5%BC%82%E5%B8%B8/" class="archive-article-date">
-  	<time datetime="2020-03-29T03:35:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><p><code>C++</code> 提供了一系列标准的异常，定义在<code>&lt;exception&gt;</code>中，我们可以在程序中使用这些标准的异常。<code>C++</code>语言本身或者标准库抛出的异常都是 <code>exception</code> 的子类，称为标准异常（<code>Standard Exception</code>）。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/29/%E6%A0%87%E5%87%86%E5%BC%82%E5%B8%B8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-  
-    <article id="post-Cpp异常" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/22/Cpp%E5%BC%82%E5%B8%B8/">Cpp异常</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/22/Cpp%E5%BC%82%E5%B8%B8/" class="archive-article-date">
-  	<time datetime="2020-03-22T03:58:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><p>异常提供了一种转移程序控制权的方式。<code>C++</code> 异常处理涉及到三个关键字：<code>try</code>、<code>catch</code>、<code>throw</code>。</p>
-<ul>
-<li><code>throw</code>: 当问题出现时，程序会抛出一个异常。这是通过使用 <code>throw</code> 关键字来完成的。</li>
-<li><code>catch</code>: 在您想要处理问题的地方，通过异常处理程序捕获异常。<code>catch</code> 关键字用于捕获异常。</li>
-<li><code>try</code>: <code>try</code>块中的代码标识将被激活的特定异常。它后面通常跟着一个或多个 <code>catch</code> 块。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/22/Cpp%E5%BC%82%E5%B8%B8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
@@ -973,6 +971,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">强化学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">轨迹跟踪</a>
               </li>
             
             <div class="clearfix"></div>
