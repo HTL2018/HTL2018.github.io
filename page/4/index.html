@@ -155,6 +155,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-异常层次结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/29/%E5%BC%82%E5%B8%B8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/">异常层次结构</a>
+    </h1>
+  
+
+        
+         
+
+<a href="/2020/03/29/%E5%BC%82%E5%B8%B8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/" class="archive-article-date">
+  	<time datetime="2020-03-29T03:37:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><ul>
+<li>0、异常的类型可以是自定义类类型，对于类类型异常的匹配依旧是至上而下严格匹配，赋值兼容性原则在异常匹配中依然适用。一般而言，将匹配子类异常的 <code>catch</code> 放在上部，匹配父类异常的 <code>catch</code> 放在下部。在工程中会定义一系列的异常类，每个类代表工程中可能出现的一种异常类型。</li>
+<li>1、<code>C++</code> 中直接支持异常处理的概念；</li>
+<li>2、<code>try...catch..</code>是 <code>C++</code> 中异常处理的专用语句；</li>
+<li>3、<code>try</code> 语句处理正常代码逻辑，<code>catch</code> 语句处理异常情况，同一个 <code>try</code> 语句可以跟上多个 <code>catch</code> 语句；</li>
+<li>4、异常处理必须严格匹配，不进行任何的转换；
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/29/%E5%BC%82%E5%B8%B8%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+  
     <article id="post-特殊工具与技术" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -712,88 +795,6 @@
 
 
   
-    <article id="post-静态成员与继承" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/15/%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E4%B8%8E%E7%BB%A7%E6%89%BF/">静态成员与继承</a>
-    </h1>
-  
-
-        
-         
-
-<a href="/2020/03/15/%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E4%B8%8E%E7%BB%A7%E6%89%BF/" class="archive-article-date">
-  	<time datetime="2020-03-15T08:45:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="相关内容："><a href="#相关内容：" class="headerlink" title="相关内容："></a>相关内容：</h3><ul>
-<li>父类的<code>static</code>变量和函数在派生类中依然可用，但是受访问性控制（比如，父类的<code>private</code>域中的就不可访问），而且对<code>static</code>变量来说，派生类和父类中的<code>static</code>变量是共用空间的，这点在利用<code>static</code>变量进行引用计数的时候要特别注意。   </li>
-<li><code>static</code>函数没有“虚函数”一说。</li>
-<li>静态变量并不是说其就不能改变值，不能改变值的量叫常量（即<code>const</code>）， 其拥有的值是可变的 ，而且它会保持最新的值。说其静态，是因为它不会随着函数的调用和退出而发生变化。即上次调用函数的时候，如果我们给静态变量赋予某个值的话，下次函数调用时，这个值保持不变。</li>
-<li>静态变量 类型说明符是<code>static</code>。
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/15/%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E4%B8%8E%E7%BB%A7%E6%89%BF/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
@@ -977,6 +978,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">轨迹跟踪</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">故障诊断</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">容错控制</a>
               </li>
             
             <div class="clearfix"></div>
